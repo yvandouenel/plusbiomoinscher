@@ -30,7 +30,7 @@ h4 { font-size:120%; font-weight: bold;}
 
 h5 { font-size:100%; }
 
-h1.title { border-bottom:1px dotted #84a1af; margin:0 0 20px 0; }
+h1.title { border-bottom:1px dotted #B1C528; margin:0 0 20px 0; color:#B1C528;}
 
 .node h2 a { color:#1c8cb5; font-size: 26px; }
 
@@ -56,7 +56,7 @@ html[xmlns] .clearfix { display: block; }
 
 #header-top-inside-left { float:left; text-align:left; padding:20px 0 0 0; color:#485766; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:80%; }
 
-#header-top-inside-left a  { color: #6a87a3; }
+#header-top-inside-left a  { color: #FFFFFF; font-size : 1.2em; }
 
 #header-top-inside-left-feed { float:left; padding:20px 0 0 0; }
 
@@ -84,7 +84,7 @@ html[xmlns] .clearfix { display: block; }
 
 #site-name a { color:#ffffff; font-size:14px; outline:none; }
 
-#slogan { color:#485766; text-transform:uppercase; font-size:10px; }
+#slogan { color:#FFFFFF; text-transform:uppercase; font-size:12px; }
 
 #navigation { float:right; margin:10px 0 0 40px;  display:block; }
 
@@ -379,7 +379,7 @@ ul.pager a:hover { background:#4eabd7; }
 
 #navigation ul.menu li.last, #navigation ul.sf-menu li.last { padding:0; }
 
-#navigation ul.menu li a, #navigation ul.sf-menu li a { outline:none; padding: 5px 10px; text-decoration: none; display:block; color:#7A8090; font-size:17px; font-weight:bold; text-align:center; }
+#navigation ul.menu li a, #navigation ul.sf-menu li a { outline:none; padding: 5px 10px; text-decoration: none; display:block; color:#FFFFFF; font-size:17px; font-weight:bold; text-align:center; }
 
 #navigation ul.menu li a:hover, #navigation ul.menu li a.active, #navigation ul.sf-menu li a:hover, #navigation ul.sf-menu li a.active{ text-decoration:none; color:#ffffff; border-radius: 5px; -moz-border-radius: 5px; background: #0d0f13; }
 
@@ -605,7 +605,7 @@ div.messages { margin: 0 10px 20px 10px; }
 	#header-top-inside-left-feed { float: none; padding: 30px 0 0 0; display: inline-block; }
 	#header-top-inside-right { float: none; padding: 20px 0 0 0;display: inline-block; }
 	/*header*/
-	#header { padding: 120px 0 21px 0; }
+	#header { padding: 20px 0 21px 0; }
 	#logo-floater { text-align: center; float: none; }
 	/*main navigation*/
 	#navigation { margin: 30px auto 20px; width: 55%; float: none; min-width: 220px; }

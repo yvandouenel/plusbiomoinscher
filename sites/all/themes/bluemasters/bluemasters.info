@@ -43,7 +43,7 @@ settings[slideshow_pause]= 1
 settings[slideshow_touch]= 1
 settings[responsive_menu_state]= 1
 settings[responsive_menu_switchwidth]='960'
-settings[responsive_menu_topoptiontext]= 'Select a page'
+settings[responsive_menu_topoptiontext]= 'Choisissez une rubrique'
 
 
 ; Information added by drupal.org packaging script on 2013-05-22

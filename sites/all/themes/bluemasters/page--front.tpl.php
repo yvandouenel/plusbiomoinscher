@@ -13,13 +13,13 @@
             <div class="grid_2">
                 <!--header-top-inside-left-feed-->
                 <div id="header-top-inside-left-feed">
-                    <div id="topSocial">
+                    <!-- <div id="topSocial">
                     <ul>									
                         <li><a class="twitter" href="http://twitter.com/morethanthemes" title="Follow Us on Twitter!"></a></li>
                         <li><a class="facebook" href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" title="Join Us on Facebook!"></a></li>
                         <li><a class="rss" title="RSS" href="#" title="Subcribe to Our RSS Feed"></a></li>
                     </ul>
-                    </div>
+                    </div>-->
                 </div>
                 <!--EOF:header-top-inside-left-feed-->
             </div>
@@ -101,7 +101,7 @@
                 <div class="slider-item-image">
                 <a href="<?php print url('node/3'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-3.jpg'; ?>"></a>
                 </div>
-                <div class="slider-item-caption">About Bluemasters</div>
+                <div class="slider-item-caption">Le bio à bas pris tous les jours à Lattes proche de Montpellier </div>
                 </li>
                 <!-- EOF: slider-item -->
                 
@@ -110,7 +110,7 @@
                 <div class="slider-item-image">
                 <a href="<?php print url('node/2'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-2.jpg'; ?>"></a>
                 </div>
-                <div class="slider-item-caption">Our Portfolio</div>
+                <div class="slider-item-caption">Circuits courts : Consommez des produits locaux et de saison à Montpellier et Lattes</div>
                 </li>
                 <!-- EOF: slider-item -->
                 
@@ -119,7 +119,7 @@
                 <div class="slider-item-image">
                 <a href="<?php print url('node/1'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-1.jpg'; ?>"></a>
                 </div>
-                <div class="slider-item-caption">Creation of Beaches</div>
+                <div class="slider-item-caption">Allergies, intolérances ? <span style="font-size: 0.7em;">Visitez notre gamme de produits sans allergènes (gluten, lactose, arachides ...)</span></div>
                 </li>
                 <!-- EOF: slider-item -->
                 
@@ -239,7 +239,7 @@
             </div>
 
             <div class="grid_12">
-        	   <div class="credits-container" style="clear:both; padding-top:12px;">Ported to Drupal for the Open Source Community by <a href="http://www.drupalizing.com">Drupalizing</a>, a Project of <a href="http://www.morethanthemes.com">More than Themes</a></div>     
+        	   <div class="credits-container" style="clear:both; padding-top:12px; text-align: center;">+ BIO - CHER - 1532 avenue des platanes - 34970 Lattes - Boirargues - Tel : 04 67 17 16 46 </div>
             </div>
 
         </div>
@@ -248,8 +248,7 @@
 
             <div class="grid_12">
                 <div class="credits-container clearfix">
-                    <a title="Brought To You By: www.SmashingMagazine.com" class="smashing" href="http://www.smashingmagazine.com" target="_blank">Brought to you By: www.SmashingMagazine.com</a>
-                    <a title="Drupalizing" class="drupalizing" href="http://www.drupalizing.com" target="_blank">Drupalizing</a> 
+                    <a  href="http://www.coopernet.fr" target="_blank">Site Internet par Coopernet</a> | <a  href="http://www.jeromebryon.com/" target="_blank">Photos par Jérôme Bryon </a>
                 </div>
             </div>
 
