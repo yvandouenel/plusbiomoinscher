@@ -48,17 +48,7 @@
                     </a>
                     <?php endif; ?>
                     
-                    <?php if ($site_name || $site_slogan): ?>
-                    <div class="clearfix">
-        				<?php if ($site_name): ?>
-                        <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
-                        <?php endif; ?>
-                        
-                        <?php if ($site_slogan): ?>
-                        <span id="slogan"><?php print $site_slogan; ?></span>
-                        <?php endif; ?>
-                    </div>
-                    <?php endif; ?>
+           
                 </div> 
                 <!--EOF:logo-floater-->
             </div>
@@ -76,6 +66,17 @@
                     endif; ?>
                 </div>
                 <!--EOF:navigation-->
+                <?php if ($site_name || $site_slogan): ?>
+                    <div class="div-slogan" id="laduboboleon">
+        				<?php if ($site_name): ?>
+                        <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
+                        <?php endif; ?>
+
+                        <?php if ($site_slogan): ?>
+                        <span id="slogan"><?php print $site_slogan; ?></span>
+                        <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
             </div>
            
         </div>
@@ -101,7 +102,7 @@
                 <div class="slider-item-image">
                 <a href="<?php print url('node/3'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-3.jpg'; ?>"></a>
                 </div>
-                <div class="slider-item-caption">Le bio à bas pris tous les jours à Lattes proche de Montpellier </div>
+                <div class="slider-item-caption">Le bio à bas prix tous les jours à Lattes proche de Montpellier </div>
                 </li>
                 <!-- EOF: slider-item -->
                 

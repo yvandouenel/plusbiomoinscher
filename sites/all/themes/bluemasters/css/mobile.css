@@ -24,3 +24,7 @@
 .align_right {
   text-align: left;
 }
+.grid_7 div.div-slogan{
+    float:none;
+    margin : 2% 0 0 0;
+}

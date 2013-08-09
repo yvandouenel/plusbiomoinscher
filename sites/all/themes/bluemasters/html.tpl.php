@@ -56,6 +56,7 @@
   <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/respond.min.js"></script>
   <![endif]-->
   <?php endif; ?>
+  <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css' />
 
   <?php print $scripts; ?>
 </head>

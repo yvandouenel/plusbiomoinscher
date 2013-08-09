@@ -48,17 +48,7 @@
                     </a>
                     <?php endif; ?>
                     
-                    <?php if ($site_name || $site_slogan): ?>
-                    <div class="clearfix">
-        				<?php if ($site_name): ?>
-                        <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
-                        <?php endif; ?>
-                        
-                        <?php if ($site_slogan): ?>
-                        <span id="slogan"><?php print $site_slogan; ?></span>
-                        <?php endif; ?>
-                    </div>
-                    <?php endif; ?>
+                    
                 </div> 
                 <!--EOF:logo-floater-->
             </div>
@@ -76,6 +66,17 @@
                     endif; ?>
                 </div>
                 <!--EOF:navigation-->
+                <?php if ($site_name || $site_slogan): ?>
+                    <div class="div-slogan" id="laduboboleon">
+        				<?php if ($site_name): ?>
+                        <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
+                        <?php endif; ?>
+
+                        <?php if ($site_slogan): ?>
+                        <span id="slogan"><?php print $site_slogan; ?></span>
+                        <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
             </div>
            
         </div><!--EOF:header-->
@@ -218,7 +219,7 @@
             </div>
 
             <div class="grid_12">
-        	   <div class="credits-container" style="clear:both; padding-top:12px;">Ported to Drupal for the Open Source Community by <a href="http://www.drupalizing.com">Drupalizing</a>, a Project of <a href="http://www.morethanthemes.com">More than Themes</a></div>     
+        	   <div class="credits-container" style="clear:both; padding-top:12px; text-align: center;">+ BIO - CHER - 1532 avenue des platanes - 34970 Lattes - Boirargues - Tel : 04 67 17 16 46 </div>
             </div>
 
         </div>
@@ -227,12 +228,11 @@
 
             <div class="grid_12">
                 <div class="credits-container clearfix">
-                    <a title="Brought To You By: www.SmashingMagazine.com" class="smashing" href="http://www.smashingmagazine.com" target="_blank">Brought to you By: www.SmashingMagazine.com</a>
-                    <a title="Drupalizing" class="drupalizing" href="http://www.drupalizing.com" target="_blank">Drupalizing</a> 
-                </div>  
-            </div> 
-        
-        </div> 
+                    <a  href="http://www.coopernet.fr" target="_blank">Site Internet par Coopernet</a> | <a  href="http://www.jeromebryon.com/" target="_blank">Photos par Jérôme Bryon </a>
+                </div>
+            </div>
+
+        </div>  
             
     </div>
     <!--EOF:footer-bottom-->
