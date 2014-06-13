@@ -10,7 +10,7 @@
 function domainedo_editors_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer ckeditor'.
+  // Exported permission: administer ckeditor.
   $permissions['administer ckeditor'] = array(
     'name' => 'administer ckeditor',
     'roles' => array(
@@ -19,12 +19,11 @@ function domainedo_editors_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
-  // Exported permission: 'customize ckeditor'.
+  // Exported permission: customize ckeditor.
   $permissions['customize ckeditor'] = array(
     'name' => 'customize ckeditor',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'ckeditor',
   );

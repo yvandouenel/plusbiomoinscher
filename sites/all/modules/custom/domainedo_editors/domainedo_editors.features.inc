@@ -7,7 +7,8 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function domainedo_editors_ctools_plugin_api($module = NULL, $api = NULL) {
+function domainedo_editors_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }

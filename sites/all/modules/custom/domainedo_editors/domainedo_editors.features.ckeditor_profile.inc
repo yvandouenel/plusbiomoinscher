@@ -74,6 +74,7 @@ function domainedo_editors_ckeditor_profile_defaults() {
                 'icon' => 'icons/atom.png',
               ),
             ),
+            'active' => 0,
           ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
@@ -104,10 +105,6 @@ function domainedo_editors_ckeditor_profile_defaults() {
       'name' => 'Full',
       'settings' => array(
         'ss' => 2,
-        'default' => 't',
-        'show_toggle' => 't',
-        'uicolor' => 'default',
-        'uicolor_user' => 'default',
         'toolbar' => '[
     [\'Source\'],
     [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
@@ -125,10 +122,16 @@ function domainedo_editors_ckeditor_profile_defaults() {
     [\'Maximize\',\'ShowBlocks\']
 ]',
         'expand' => 't',
+        'default' => 't',
+        'show_toggle' => 't',
+        'uicolor' => 'default',
+        'uicolor_user' => 'default',
         'width' => '100%',
         'lang' => 'fr',
         'auto_lang' => 't',
         'language_direction' => 'default',
+        'allowed_content' => 't',
+        'extraAllowedContent' => '',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
         'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
@@ -152,23 +155,14 @@ function domainedo_editors_ckeditor_profile_defaults() {
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
+        'ckeditor_load_method' => 'ckeditor.js',
+        'ckeditor_load_time_out' => 0,
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
         'js_conf' => '',
         'loadPlugins' => array(
-          'dnd' => array(
-            'name' => 'dnd',
-            'desc' => 'Scald Drag and Drop integration',
-            'path' => '%base_path%sites/all/modules/contrib/scald/modules/library/dnd/plugins/ckeditor/',
-            'buttons' => array(
-              'ScaldAtom' => array(
-                'label' => 'ScaldAtom',
-                'icon' => 'icons/atom.png',
-              ),
-            ),
-          ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',

@@ -36,12 +36,12 @@ function domainedo_editors_strongarm() {
     1 => array(
       'name' => 'User-1',
       'usertab' => 1,
-      'filesize' => '0',
-      'quota' => '0',
-      'tuquota' => '0',
+      'filesize' => 0,
+      'quota' => 0,
+      'tuquota' => 0,
       'extensions' => '*',
-      'dimensions' => '0',
-      'filenum' => '0',
+      'dimensions' => '1200x1200',
+      'filenum' => 0,
       'directories' => array(
         0 => array(
           'name' => '.',
@@ -75,7 +75,7 @@ function domainedo_editors_strongarm() {
           'suffix' => '',
         ),
       ),
-      'mkdirnum' => '0',
+      'mkdirnum' => 0,
     ),
     2 => array(
       'name' => 'Sample profile',
@@ -108,38 +108,6 @@ function domainedo_editors_strongarm() {
         ),
       ),
       'mkdirnum' => 2,
-    ),
-    3 => array(
-      'name' => 'redacteur',
-      'usertab' => 1,
-      'filesize' => '10',
-      'quota' => '0',
-      'tuquota' => '0',
-      'extensions' => 'gif png jpg jpeg pdf',
-      'dimensions' => '0',
-      'filenum' => '0',
-      'directories' => array(
-        0 => array(
-          'name' => 'u%uid',
-          'subnav' => 0,
-          'browse' => 1,
-          'upload' => 1,
-          'thumb' => 1,
-          'delete' => 1,
-          'resize' => 0,
-          'mkdir' => 1,
-          'rmdir' => 1,
-        ),
-      ),
-      'thumbnails' => array(
-        0 => array(
-          'name' => 'Thumb',
-          'dimensions' => '90x90',
-          'prefix' => 'thumb_',
-          'suffix' => '',
-        ),
-      ),
-      'mkdirnum' => '2',
     ),
   );
   $export['imce_profiles'] = $strongarm;
