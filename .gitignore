@@ -7,7 +7,6 @@ sites/*/private
 
 # Ignore database dump
 db/*
-# Ignore netbean project
-nbproject/*
-nbproject/private/*
 
+# Ignore netbeans files
+nbproject/*
