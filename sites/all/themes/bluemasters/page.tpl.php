@@ -135,17 +135,6 @@
                         <div class="grid_4 alpha omega">
                             <div id="right" class="clearfix">
                                 
-                                <div id="network" class="block">
-                                    <h2>Network Connect</h2>  
-                                    <div class="network">
-                                        <a href="http://twitter.com/morethanthemes" class="twitter">Twitter</a>
-                                        <a href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" class="facebook">Facebook</a>
-                                        <a href="http://www.flickr.com/photos/56103643@N07/" class="flickr">Flickr</a>
-                                        <a href="#" class="in">In</a>
-                                        <a href="#" class="tumblr">Tumblr</a>
-                                        <a href="http://www.youtube.com/morethanthemes" class="youtube">Youtube</a>
-                                    </div>
-                                </div>
                                     
                                 <?php print render($page['sidebar_first']); ?>
                             
