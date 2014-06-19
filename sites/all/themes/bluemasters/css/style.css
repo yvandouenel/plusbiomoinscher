@@ -578,7 +578,7 @@ background: url("../images/footer-logo-drupalizing.png") no-repeat scroll center
 /*  --------------------------------------------------------------------- */
 table { margin:15px 0; border: 1px solid #cdcdcd; border-collapse:collapse; border-spacing:0; font-size:100%; width: 100%;}
 
-th {background:#9097A9; color:#ffffff;}
+th {background:#B1C528; color:#ffffff;}
 
 tr.even { background-color:#e0e3eb; }
 
@@ -591,7 +591,7 @@ td { border: 1px solid #cdcdcd;}
 td.active { background:none; border: 1px solid #cdcdcd;}
 
 /*  --------------------------------------------------------------------- */
-ul, ol { display:block; margin:15px 0 15px 40px; }
+ul, ol { display:block; margin:15px 0 15px 20px; }
 ul ul, ul ul ul, ol ol, ol ol ol { margin:0; margin-left:20px; }
 ol { list-style-type:decimal; }
 ol ol { list-style-type:upper-alpha; }
@@ -601,6 +601,16 @@ ul li a { text-decoration:none; }
 
 div.messages { margin: 0 10px 20px 10px; }
 
+#main-area-inside .col-tiers{
+  float:left;
+  width: 30%;
+  margin: 0 1% 0 0;
+}
+#main-area-inside .col-tiers h2{
+  color: white;
+  background-color: #B1C528;
+  padding: 5px 2px 5px 10px;
+}
 /*
  * Responsive styles 
  */
@@ -609,6 +619,11 @@ div.messages { margin: 0 10px 20px 10px; }
 	/*#home-blocks-area*/
 	#home-blocks-area .block h2 { font-size:16px; }
 	#home-blocks-area .block .content h3 { font-size:14px; line-height: 18px;}
+  #main-area-inside .col-tiers{
+    float:none;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /*LANDSCAPE PHONE TO PORTRAIT TABLET*/
@@ -675,5 +690,27 @@ div.messages { margin: 0 10px 20px 10px; }
 
 /*DESKTOP SCREENS*/
 @media all and (min-width: 980px) {
-    
+    #main-area-inside .col-tiers h2{
+    font-size: 1.2em;
+  }
 } 
+
+/* My CSS *********************************************************************/
+#navigation > ul.menu > li.first{
+  width : 26px;
+   margin:0 10px 0 0;
+  padding : 0;
+}
+#navigation > ul.menu > li.first > a, #navigation > ul.menu > li.first > a.active{
+  text-indent : -6000px;
+  background: url(../images/home.png) no-repeat 50% 50%; 
+  width : 30px;
+  height: 32px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+ #navigation > ul.menu > li.first > a.active,
+ #navigation > ul.menu > li.first > a:hover, #navigation > ul.menu > li.first > a.active:hover{
+  background-color: black; 
+}
