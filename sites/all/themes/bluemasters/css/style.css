@@ -155,7 +155,7 @@ min-height:100px; overflow:hidden; clear:both; }
 
 #home-blocks-area .region-home-area-3-b .block { background:none; margin: -6px 0 0; }
 
-#home-blocks-area .block { background:url(../images/home-block-header-bg.png) repeat-x top; padding-bottom:20px;  }
+#home-blocks-area .block { /*background:url(../images/home-block-header-bg.png) repeat-x top; */padding-bottom:20px;  }
 
 #home-blocks-area .block h2 { height: 36px; font-size:20px; font-weight:bold; color:#ffffff; margin:0; padding:10px 0 0 20px; }
 
@@ -165,8 +165,25 @@ min-height:100px; overflow:hidden; clear:both; }
 
 #home-blocks-area .region-home-area-3 .block h2 { background:url(../images/icons/phone-icon.png) no-repeat 13px 10px; padding:10px 0 0 49px; }
 
-#home-blocks-area .block .content { background:url(../images/sectionbg.png); padding:20px; display:block; overflow:hidden; 
+#home-blocks-area .block .content { padding:20px; display:block; overflow:hidden; 
 font-family:  Arial, Helvetica, Sans Serif; font-size: 14px; color: #6a7796; }
+#home-blocks-area div.views-row .grid_4{
+  background:url(../images/sectionbg.png);
+  color: white;
+  min-height: 270px;
+  border-radius: 8px;
+}
+#home-blocks-area div.views-row .grid_4>a>img{
+  border-radius: 8px 8px 0 0;
+}
+body.front .container_12 .grid_4{
+  width: 283px;
+}
+#home-blocks-area div.views-row .grid_4:after{
+  content:"";
+  display: block;
+  clear: both;
+}
 
 #home-blocks-area .block .content h1, 
 #home-blocks-area .block .content h2, 
