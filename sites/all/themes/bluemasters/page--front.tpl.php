@@ -143,7 +143,7 @@
             <div class="grid_12">
                 <!--home-block-area-->
                 <div id="home-blocks-area" class="clearfix">
-                
+                <?php print render($page['under_content']); ?>
             		<?php if ($messages): ?>
                     <div class="clearfix">
                     <?php print $messages; ?>

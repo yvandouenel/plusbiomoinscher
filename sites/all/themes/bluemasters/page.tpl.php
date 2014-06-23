@@ -124,7 +124,7 @@
                                 <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
                                 
                                 <?php print render($page['content']); ?>
-                                
+                                <?php print render($page['under_content']); ?>
                                 <?php if ($feed_icons): ?><?php print $feed_icons; ?><?php endif; ?>
                                 
                             </div>
