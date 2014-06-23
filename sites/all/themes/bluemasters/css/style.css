@@ -167,6 +167,10 @@ min-height:100px; overflow:hidden; clear:both; }
 
 #home-blocks-area .block .content { padding:20px; display:block; overflow:hidden; 
 font-family:  Arial, Helvetica, Sans Serif; font-size: 14px; color: #6a7796; }
+
+#home-blocks-area{
+   border-radius: 8px;
+}
 #home-blocks-area div.views-row .grid_4{
   background:url(../images/sectionbg.png);
   color: white;
