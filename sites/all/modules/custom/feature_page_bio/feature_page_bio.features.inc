@@ -20,9 +20,9 @@ function feature_page_bio_ctools_plugin_api() {
 function feature_page_bio_image_default_styles() {
   $styles = array();
 
-  // Exported image style: image-allongee-880x200.
-  $styles['image-allongee-880x200'] = array(
-    'name' => 'image-allongee-880x200',
+  // Exported image style: image-allongee-902x200.
+  $styles['image-allongee-902x200'] = array(
+    'name' => 'image-allongee-902x200',
     'effects' => array(
       3 => array(
         'label' => 'Mise à l’échelle et recadrage',
@@ -34,7 +34,7 @@ function feature_page_bio_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 880,
+          'width' => 902,
           'height' => 200,
         ),
         'weight' => 1,
