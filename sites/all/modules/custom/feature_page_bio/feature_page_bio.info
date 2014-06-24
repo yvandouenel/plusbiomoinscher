@@ -1,6 +1,7 @@
 name = Feature page +bio
 core = 7.x
 package = Custom
+php = 5.2.4
 version = 7.x-1.0
 project = feature_page_bio
 dependencies[] = ctools
