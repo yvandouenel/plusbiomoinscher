@@ -285,6 +285,7 @@ div.field-type-taxonomy-term-reference .field-items .field-item { float:left; di
 .node .content .field-name-field-image-basse img{
   float: none;
   margin:0;
+  max-width: 100%;
 }
 
 /*
