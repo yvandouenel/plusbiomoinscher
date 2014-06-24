@@ -65,7 +65,7 @@ function feature_page_bio_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'image-allongee-902x200',
         ),
         'type' => 'image',
         'weight' => 3,
@@ -115,7 +115,7 @@ function feature_page_bio_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'image-allongee-880x200',
+          'image_style' => 'image-allongee-902x200',
         ),
         'type' => 'image',
         'weight' => 0,
