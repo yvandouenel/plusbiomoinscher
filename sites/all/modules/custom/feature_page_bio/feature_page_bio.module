@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Feature page +bio feature.
+ */
+
+include_once 'feature_page_bio.features.inc';
