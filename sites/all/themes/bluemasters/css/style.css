@@ -746,3 +746,20 @@ div.messages { margin: 0 10px 20px 10px; }
  #navigation > ul.menu > li.first > a:hover, #navigation > ul.menu > li.first > a.active:hover{
   background-color: black; 
 }
+/* slideshow diaporama ********************************************************/
+.flexslider .views-field-title a{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 96%;
+  padding: 0 2%;
+  text-decoration : none;
+  background-color: black;
+  opacity: 0.7;
+  font-size: 1.8em;
+  color: white;
+  height: 50px;
+}
+.flex-control-nav {
+  bottom: -30px;
+}
