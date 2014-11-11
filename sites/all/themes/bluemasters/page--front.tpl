@@ -9,7 +9,7 @@
                 <div id="header-top-inside-left"><?php print render($page['header']); ?></div>
                 <!--EOF:header-top-inside-left-->
             </div>
-
+            
             <div class="grid_2">
                 <!--header-top-inside-left-feed-->
                 <div id="header-top-inside-left-feed">
@@ -19,7 +19,7 @@
                         <li><a class="facebook" href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" title="Join Us on Facebook!"></a></li>
                         <li><a class="rss" title="RSS" href="#" title="Subcribe to Our RSS Feed"></a></li>
                     </ul>
-                    </div>-->
+                    </div> -->
                 </div>
                 <!--EOF:header-top-inside-left-feed-->
             </div>
@@ -33,9 +33,9 @@
         </div>
     </div>
     <!--EOF:header-top-->
-    
+
     <div id="wrapper">
-    	
+
         <!--header-->
         <div id="header" class="clearfix container_12">
         	
@@ -48,11 +48,11 @@
                     </a>
                     <?php endif; ?>
                     
-           
+                    
                 </div> 
                 <!--EOF:logo-floater-->
             </div>
-
+            
             <div class="grid_7">
                 <!--navigation-->
                 <div id="navigation">
@@ -79,69 +79,78 @@
                     <?php endif; ?>
             </div>
            
-        </div>
-        <!--EOF:header-->
-
+        </div><!--EOF:header-->
+        
         <div class="container_12">
-            
             <div class="grid_12">
-                <!--banner-->
-                <div id="banner">
-                <?php print render($page['banner']); ?>
+                <div id="main-area" class="clearfix">
                 
-                <?php print render($page['content']); ?>
+                    <div id="main-area-inside" class="clearfix">
+                        
+                        <?php if ($page['sidebar_first']) { ?>
+                        <div class="grid_8 alpha omega">
+                        <?php } else { ?>
+                        <div class="grid_12 alpha omega">    
+                        <?php } ?>
 
+                            <div id="main"  class="inside clearfix">
+                                
+                                <?php if ($page['highlighted']): ?><div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+                           
+                    			<?php if ($messages): ?>
+                                <div class="clearfix">
+                    			<?php print $messages; ?>
+                                </div>
+                                <?php endif; ?>
+                         
+                                <?php if ($page['help']): ?>
+                                <div id="help">
+                                <?php print render($page['help']); ?>
+                                </div>
+                                <?php endif; ?>
+                                
+                                <?php if ($action_links): ?>
+                                <ul class="action-links">
+                    			<?php print render($action_links); ?>
+                                </ul>
+                    			<?php endif; ?>
+                                
+                                <?php print render($title_prefix); ?>
+                                <?php if ($title): ?>
+                                <h1 class="title"><?php print $title ?></h1>
+                                <?php endif; ?>
+                                <?php print render($title_suffix); ?>
+                                
+                                <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
+                                
+                                <?php print render($page['content']); ?>
+                                <?php print render($page['under_content']); ?>
+                                <?php if ($feed_icons): ?><?php print $feed_icons; ?><?php endif; ?>
+                                
+                            </div>
+                            <!--main-->
+                        </div>
+                    
+                		<?php if($page['sidebar_first']): ?>
+                        <div class="grid_4 alpha omega">
+                            <div id="right" class="clearfix">
+                                
+                                    
+                                <?php print render($page['sidebar_first']); ?>
+                            
+                            </div>
+                            <!--right-->
+                        </div>
+                        <?php endif; ?>
+                        
+                    </div>
+                
                 </div>
-                <!--EOF:banner-->
-            </div>    
-
+                <!--main-area-->
+            </div>
         </div>
-
-        <div class="container_12">
-          
-            <div class="grid_12">
-                <!--home-block-area-->
-                <div id="home-blocks-area" class="clearfix">
-                <?php print render($page['under_content']); ?>
-            		<?php if ($messages): ?>
-                    <div class="clearfix">
-                    <?php print $messages; ?>
-                    </div>
-                    <?php endif; ?>
-
-                    <div class="grid_4 alpha">
-                        <div class="column-fix">
-                            <div class="home-block-area first">
-                                <?php print render($page['home_area_1']);?> 		
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid_4 alpha omega">
-                        <div class="column-fix">
-                            <div class="home-block-area">
-                                <?php print render($page['home_area_2']);?> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid_4 omega">
-                        <div class="column-fix">
-                            <div class="home-block-area last">
-                                <?php print render($page['home_area_3']);?> 
-                                <?php print render($page['home_area_3_b']);?> 
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--EOF:home-block-area-->
-            </div>    
-
-        </div>
-
-    </div>
-    <!--EOF:wrapper-->
+        
+    </div><!-- /#wrapper-->
 
     <!--footer-->
     <div id="footer">
@@ -155,7 +164,7 @@
                 		</div>
                     </div>
                     <div class="grid_2 omega">
-                		<div id="footer-left-2">
+                        <div id="footer-left-2">
                 			<?php print render($page['footer_left_2']);?>
                 		</div>
                     </div>
@@ -167,12 +176,12 @@
                 	<?php print render($page['footer_center']);?>
                 </div>
             </div>
-
+            
             <div class="grid_4">
                 <div id="footer-right">
                 	<?php print render($page['footer_right']);?>
                 </div>
-            </div>            
+            </div>
             
         </div>
     </div>
@@ -213,9 +222,8 @@
             </div>
 
         </div>  
-
+            
     </div>
     <!--EOF:footer-bottom-->
 
-</div>
-<!--EOF:page-->
+</div><!--EOF:page-->
