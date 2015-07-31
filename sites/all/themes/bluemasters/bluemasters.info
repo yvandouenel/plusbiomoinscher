@@ -46,6 +46,7 @@ settings[responsive_menu_state]= 1
 settings[responsive_menu_switchwidth]='960'
 settings[responsive_menu_topoptiontext]= 'Choisissez une rubrique'
 
+scripts[0] = 'js/bug_ss_firefox.js'
 
 ; Information added by drupal.org packaging script on 2013-05-22
 version = "7.x-2.0"
