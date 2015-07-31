@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
    console.log("Dans resize");
    var wwidth = $(window).width();
    var wheight = $(window).height();
-   resizeTo(wwidth,wheight);
+   resizeTo(800,600);
 
 });
 
