@@ -5,10 +5,10 @@ jQuery(document).ready(function($) {
    /*var wwidth = $(window).width();
    var wheight = $(window).height();
    resizeTo(800,600);*/
-  $('.flex-viewport').each(function() {
+  /*$('.flex-viewport').each(function() {
     var first_image_height = $(this).find('ul.slides li:first-child img').css('height');
     $(this).css('height', first_image_height);
-  });
+  });*/
 
 });
 
