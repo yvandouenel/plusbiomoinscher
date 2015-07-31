@@ -2,9 +2,10 @@ jQuery(document).ready(function($) {
   /* Ajout ce code pour régler le pb d'affichage du diaporama avec firefox */
    console.log("Avant resize");
    console.log("Dans resize");
-   var ww = $(".flexslider ul li").width();
-   $('.flexslider ul li').each(function() {
-     $(this).width(ww);
+   
+   $('.flexslider ul li img').each(function() {
+     $(this).width(920);
+     $(this).height(316);
    });
 
 });
