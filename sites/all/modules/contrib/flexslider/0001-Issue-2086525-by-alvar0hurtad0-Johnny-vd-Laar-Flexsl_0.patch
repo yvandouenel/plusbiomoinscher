@@ -1,0 +1,66 @@
+From 71705c763c1d4a1055dfb394bef564df62f5f457 Mon Sep 17 00:00:00 2001
+From: alvar0hurtad0 <alvar0hurtad0@1564318.no-reply.drupal.org>
+Date: Fri, 2 May 2014 23:36:53 +0200
+Subject: [PATCH] Issue 2086525 by alvar0hurtad0 | Johnny vd Laar Flexslider
+ with smooth height initially loads with height: 0px;
+
+---
+ assets/js/flexslider.load.js | 38 ++++++++++++++++++--------------------
+ 1 file changed, 18 insertions(+), 20 deletions(-)
+
+diff --git a/assets/js/flexslider.load.js b/assets/js/flexslider.load.js
+index 8423c6f..b5429b6 100755
+--- a/assets/js/flexslider.load.js
++++ b/assets/js/flexslider.load.js
+@@ -1,30 +1,28 @@
+ (function($) {
++  $(window).bind('load', function() {
++    var sliders = [];
++    var settings = Drupal.settings;
++    var context = $('body');
++    if ($.type(settings.flexslider) !== 'undefined' && $.type(settings.flexslider.instances) !== 'undefined') {
+ 
+-  // Behavior to load FlexSlider
+-  Drupal.behaviors.flexslider = {
+-    attach: function(context, settings) {
+-      var sliders = [];
+-      if ($.type(settings.flexslider) !== 'undefined' && $.type(settings.flexslider.instances) !== 'undefined') {
++      for (id in settings.flexslider.instances) {
+ 
+-        for (id in settings.flexslider.instances) {
+-
+-          if (settings.flexslider.optionsets[settings.flexslider.instances[id]] !== undefined) {
+-            if (settings.flexslider.optionsets[settings.flexslider.instances[id]].asNavFor !== '') {
+-              // We have to initialize all the sliders which are "asNavFor" first.
+-              _flexslider_init(id, settings.flexslider.optionsets[settings.flexslider.instances[id]], context);
+-            } else {
+-              // Everyone else is second
+-              sliders[id] = settings.flexslider.optionsets[settings.flexslider.instances[id]];
+-            }
++        if (settings.flexslider.optionsets[settings.flexslider.instances[id]] !== undefined) {
++          if (settings.flexslider.optionsets[settings.flexslider.instances[id]].asNavFor !== '') {
++            // We have to initialize all the sliders which are "asNavFor" first.
++            _flexslider_init(id, settings.flexslider.optionsets[settings.flexslider.instances[id]], context);
++          } else {
++            // Everyone else is second
++            sliders[id] = settings.flexslider.optionsets[settings.flexslider.instances[id]];
+           }
+         }
+       }
+-      // Slider set
+-      for (id in sliders) {
+-        _flexslider_init(id, settings.flexslider.optionsets[settings.flexslider.instances[id]], context);
+-      }
+     }
+-  };
++    // Slider set
++    for (id in sliders) {
++      _flexslider_init(id, settings.flexslider.optionsets[settings.flexslider.instances[id]], context);
++    }
++  });
+ 
+   /**
+    * Initialize the flexslider instance
+-- 
+1.8.5.2 (Apple Git-48)
+
