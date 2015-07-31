@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
    console.log("Avant resize");
   $(window).resize(function() {
     console.log("Dans resize");
-    var ww = $(window).width();
-    /*$('.flexslider ul li').each(function() {
+    var ww = $(".flexslider ul li").width();
+    $('.flexslider ul li').each(function() {
       $(this).width(ww);
-    });*/
+    });
   });
 });
 
